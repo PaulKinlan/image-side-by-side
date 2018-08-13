@@ -59,15 +59,15 @@ div.app {
   }
 }
 
-
-
-
 :global { 
   file-drop {
     overflow: hidden;
     touch-action: none;
-    height:100%;
-    width:100%;
+
+    pinch-zoom {
+      height: 100%;
+      width: 100%;
+    }
 
     &.drop-valid {
       transition: opacity 200ms ease-in-out, background-color 200ms;
