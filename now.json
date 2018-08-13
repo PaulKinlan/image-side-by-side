@@ -1,0 +1,30 @@
+{
+  "name": "sidebyside.pictures",
+  "alias": "sidebyside.pictures",
+  "type": "static",
+  "static": {
+    "headers": [
+      {
+        "source" : "**/*.@(mjs)",
+        "headers" : [{
+          "key" : "Content-type",
+          "value" : "text/javascript"
+        }]
+      },
+      {
+        "source" : "**/*.@(jpg|jpeg|gif|png)",
+        "headers" : [{
+          "key" : "Cache-Control",
+          "value" : "max-age=7200"
+        }]
+      },
+      {
+        "source" : "**/*.@(js|json)",
+        "headers" : [{
+          "key" : "Cache-Control",
+          "value" : "max-age=7200"
+        }]
+      }
+    ]
+  }
+}

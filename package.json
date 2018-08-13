@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "image-crop",
+  "name": "image-side-by-side",
   "version": "0.0.0",
   "license": "apache-2.0",
   "scripts": {
